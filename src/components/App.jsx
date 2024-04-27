@@ -1,7 +1,7 @@
-import { PhonebookForm } from './Phonebook/Form/Form';
+import { PhonebookForm } from './Phonebook/AddСontactForm/Form';
 import Filter from './Phonebook/Filter/Filter';
 import Contacts from './Phonebook/Contact/Contacts';
-import { fetchContacts } from '../redux/operations';
+import { fetchContacts } from '../redux/addContact/operations';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 

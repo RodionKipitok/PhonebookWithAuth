@@ -1,9 +1,9 @@
 import React from 'react';
-import '../Form/form.css';
+import '../AddСontactForm/form.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useDispatch, useSelector } from 'react-redux';
-import { getContacts } from '../../../redux/selector';
-import { addContact } from '../../../redux/operations';
+import { getContacts } from '../../../redux/addContact/selector';
+import { addContact } from '../../../redux/addContact/operations';
 
 import * as yup from 'yup';
 

@@ -1,18 +1,18 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { getContacts, getFilterValue } from '../../../redux/selector';
-import { deleteContact } from '../../../redux/operations';
+import { getFilterValue } from '../../../redux/filterContact/selector';
+import { getContacts } from '../../../redux/addContact/selector';
+import { deleteContact } from '../../../redux/addContact/operations';
 import '../Contact/contact.css';
 
 export default function Contacts() {
   const dispatch = useDispatch();
 
   const contacts = useSelector(getContacts);
-  console.log(contacts);
   const filter = useSelector(getFilterValue);
-  console.log(filter);
   const filteredItems = contacts.filter(item => {
     return item.name.toLowerCase().includes(filter.toLowerCase());
   });
+
   return (
     <>
       <h2 className="titleContact">Contacts</h2>
