@@ -1,4 +1,4 @@
-export default function LoginForm() {
+export function LoginForm() {
   const handlerChange = () => {};
 
   const handlerSubmit = () => {};

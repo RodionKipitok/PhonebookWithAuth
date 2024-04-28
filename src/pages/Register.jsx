@@ -1,13 +1,10 @@
-export default function RegisterForm() {
+import RegisterForm from 'components/Phonebook/RegisterForm/RegisterForm';
+
+export function Register() {
   return (
-    <form action="">
-      <label htmlFor="">User name</label>
-      <input type="text" name="name" id="" />
-      <label htmlFor="">Email</label>
-      <input type="email" name="email" id="" />
-      <label htmlFor="">Password</label>
-      <input type="password" name="password" id="" />
-      <button type="submit">Register</button>
-    </form>
+    <div>
+      <title>Register</title>
+      <RegisterForm />
+    </div>
   );
 }
